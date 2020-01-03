@@ -193,7 +193,8 @@ run the service like this:
 By default, it will choose port 9000. This is overridable, as is the location of the
 configuration file. For example:
 
-    $ bin/kafka-manager -Dconfig.file=/path/to/application.conf -Dhttp.port=8080
+    # $ bin/kafka-manager -Dconfig.file=/path/to/application.conf -Dhttp.port=8080
+    $ bin/kafka-manager -Dconfig.file=conf/application.conf -Dhttp.port=8080
 
 Again, if java is not in your path, or you need to run against a different version of java,
 add the -java-home option as follows:
